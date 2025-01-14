@@ -50,10 +50,10 @@ let str1 = "Atharva ";
 let str2 = "Zararia"
 console.log(str1+str2);
 
-console.log("1"+2);//12
-console.log("1"+2+2);//122
-console.log("1"+2+2);//122
-console.log(1+2+"2"); //32
+//console.log("1"+2);//12
+//console.log("1"+2+2);//122
+//console.log("1"+2+2);//122
+console.log( typeof(1+2+"2")); //32 type string hoga ye
 
 console.log(+true);//output will be 1(+ means conversion)
 console.log(+"");  //output will be 0("" => means false converting it means 0)
@@ -71,3 +71,8 @@ let b=++count;
 
 console.log(b); // here value of count is first increased and then assigned to b therefore both variables have same value;
 console.log(count);
+console.log(+true) //output will be 1 
+
+let num1 , num2 , num3
+num1 = num2 = num3 = 2+2// dont write it like this
+
