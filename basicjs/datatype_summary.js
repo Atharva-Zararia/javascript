@@ -31,3 +31,33 @@ const myFunction = function(){
 }
 
 //console.log(myFunction);
+
+
+//stack and heap memory
+// all primitive datatypes are stored in stack memory as when a variable is declared and called a copy of that value is provied
+//all non-primitive or reference datatypes are stores in heap memory as when called , they are referenced by the original address of the data 
+
+//example stack
+
+let name = "Atharva";
+let anothername = name;
+
+
+anothername = "Zararia";
+console.log(name);
+console.log(anothername);
+// here a copy of data was provided and the same was only changed
+
+//example heap
+
+let userone ={
+    email:"atharva@gmail.com",
+    upi:"user@okicici"
+}
+
+let usertwo = userone;
+
+usertwo.email = "Zararia@gmail.com";
+console.log(userone);
+console.log(usertwo);
+// here both the emails are changed as both the variables userone and usertwo were referencing the original heap address.
