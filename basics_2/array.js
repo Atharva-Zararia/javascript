@@ -4,6 +4,7 @@
 const myarr = [0,1,2,3,4,5, false,"Atharva"]; // resizeable in j
 const myarr2 = new Array(1,2,3,4);
 console.log(myarr[1]);
+console.log(myarr[0]);
 
 //1--> 0 based indexing
 // 2--> arrays in javascript when doing copy operations creates a shallow copy
@@ -38,3 +39,5 @@ console.log("A",myarr2);
 const mr2 = myarr2.splice(1,4);// here splice manipulates the original array and removes the element from the original array
 console.log(mr2);
 console.log("B",myarr2)
+
+
