@@ -58,3 +58,24 @@ console.log(Object.entries(tinderuser)); //gives all entries
 console.log(tinderuser.hasOwnProperty("id")); // this method verifies if there is a property named "id" in tinderuser , if it is then true else false
 
 
+// DE-STRUCTURING
+
+const course = {
+    coursename : "JShindi",
+    courseprice : "999",
+    courseinstructor:"hitesh"
+}
+
+console.log(course.courseinstructor); // printing values multiple times like this makes it lengthy and not optimized therefore we use
+
+
+const {courseinstructor: instructor} = course; // this is just a different syntax , now if we find "courseinstructor"  a long name to type all the time
+// we can de structure it and give it a alis name like courseinstructor:instructor 
+// now printing instructor would give the same value as present in course object's courseinstructor
+console.log(instructor);
+
+
+
+
+
+
