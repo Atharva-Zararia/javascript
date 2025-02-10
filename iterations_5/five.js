@@ -51,4 +51,5 @@ mycoding.forEach((item) => { // item is referencing the object and to get a part
     console.log(item.languagename);
     console.log(item.languageextension);
     
-})
+}
+)
