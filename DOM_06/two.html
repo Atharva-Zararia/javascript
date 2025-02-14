@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black ; color: white">
+    <div class = "parent">
+        <!--comment -->
+    <div class = "day">monday</div>
+    <div class = "day">tuesday</div>
+    <div class = "day">wednesday</div>
+    <div class = "day">thursday</div>
+    <div class = "day">friday</div>
+    </div>
+</body>
+
+<script>
+const parent = document.querySelector('.parent'); //selecting class using queryselector
+// console.log(parent);
+// console.log(parent.children);//it gives HTML collection not in array form but similar to array.. we can apply for loop to it 
+// console.log(parent.children[0]);
+// console.log(parent.children[0].innerHTML);
+
+// for(let i=0;i<parent.children.length;i++)
+// {
+//     console.log(parent.children[i].innerHTML); // this will give text value
+    
+// }
+parent.children[1].style.color="orange";
+// console.log(parent.firstElementChild);// to get first element of the class(this is parent to child)
+// console.log(parent.lastElementChild);// to get last element of the class
+const dayone = document.querySelector('.day');
+// console.log(dayone);
+// //for child to parent 
+// console.log(dayone.parentElement);//will show parent element
+console.log(dayone.nextElementSibling);// will give next sibling element
+console.log("NODES: ", parent.childNodes);//nodes should have been 5(mon to fri but output shows 11)
+//even a linebreak or enter pressed clicked is a node thats y it's 11
+// i have added an comment below parent class that also changed the count of node lists(13)
+
+
+</script>
+</html>
