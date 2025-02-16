@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+</head>
+<body style = "background-color: black; color:antiquewhite">
+    <ul class="language">
+        <li> javascript</li>
+    </ul>
+</body>
+
+    
+<script>
+    // *****************ADDING VALUES************
+    function addlanguage(langname) //created a function
+    {
+       const li =  document.createElement('li'); //used document.createElement('li') to create a list element
+       li.innerHTML=`${langname}`; //used li.innerHTML to print the name in webpage
+       document.querySelector('.language').appendChild(li);//from document.queryselector we used language class so that list elements are added to the same list
+    }// we added li to ul in the language class above
+    addlanguage("python");// we called the function and passed parameter and it got displayed
+    addlanguage("typescript");// we called the function and passed parameter and it got displayed
+
+// now what we did above needs to traverse the node tree everytime we add a new parameter
+//in the addlanguage function
+// to make it optimised we  
+
+function addoptilanguage(langname) // here we don't have to traverse the whole tree directly we create a text node but in abibe function when we use innerHTML we traverse the whole tree
+{
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(langname));
+    //the one line above and two lines below works the same
+    // const addText = document.createtextNode(langname);
+    // li.appendChildChild(addText);
+    document.querySelector('.language').appendChild(li);
+}
+addoptilanguage('sql');
+//***********EDIT VALUES*********************
+
+const second_li = document.querySelector("li:nth-child(2)")// this gives the second value of the list
+//second_li.innerHTML='Atharva' // one wayto edit value but not optimised
+
+const newli = document.createElement('li'); 
+newli.textContent = 'c' // textContent to add text to newli variable
+second_li.replaceWith(newli);
+
+//one more edit example replace javascript with typescript
+
+const first_li = document.querySelector("li:nth-child(1)")
+first_li.outerHTML = '<li>typescript</li>';// here we have to give complete outer html like what is the type of typescript it is list so <li></li>
+// when we do innerhtml we get only text
+// and when we textContent we get complete html of it with li n all
+
+
+// *************REMOVE********
+const lastlang = document.querySelector('li:last-child');
+lastlang.remove(); // removed last element
+
+
+
+</script>
+</html>
