@@ -1,0 +1,44 @@
+//Asynchronus javascript.
+
+//the asynchronous style of programming focuses more on improving the performance of the application and callbacks can also be used in such situations
+
+// Call back hell
+
+// the phenomenon which happens when we nest multiple callbacks within a function is called callback hell.
+//it makes code difficult to understand and maintain
+
+//two ways to escape the callback hell in js
+
+//1)promises
+//2) async/await
+
+
+
+//example of callback hell
+When multiple asynchronous operations depend on each other, callbacks get deeply nested, making the code hard to read and maintain.
+
+getUser(userId, (user) => {
+    getOrders(user, (orders) => {
+        processOrders(orders, (processed) => {
+            sendEmail(processed, (confirmation) => {
+                console.log("Order Processed:", confirmation);
+            });
+        });
+    });
+});
+
+one call is depended on other and it continues
+
+
+PROMISE
+in layman terms its a promise to return something at a later time.Either the thing u wanted is returned, or an error
+promises are usually used for callouts ot get data or do an operation on data.(all apex method return promises)
+
+promise supports two properties: state and result
+
+promises take a callback fucntion as their only parameter which takes two parameter that must be fucntions. the two fucntions that are
+taken as parameters will be executed based on whether the promise has been fulfilled or rejected or pending.
+
+
+we then need to do something with promise when its resolved or rejected which is done using the then() fucntion and making sure we catch if the promise
+is rejected
