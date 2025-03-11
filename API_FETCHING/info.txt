@@ -1,0 +1,10 @@
+//fetch API
+
+fetch api is a modern interface that allows you to mske HTTP requests to servers.
+
+fetch api takes two arguements the "URL" and an object "options". Only the url is mandatory and the method is set to GET by default if not provided.
+
+fetch always returns a promise. so we have a body that is a "readable stream" and to be able to read it, We need to return a JSON format of the response
+we use the .json() method for that purpose.
+ 
+to extract the data from this response we can use a .then() method again to get the dataTo extract the data from this response, we 
