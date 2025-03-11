@@ -42,3 +42,19 @@ taken as parameters will be executed based on whether the promise has been fulfi
 
 we then need to do something with promise when its resolved or rejected which is done using the then() fucntion and making sure we catch if the promise
 is rejected
+
+
+
+ASYNC await
+
+async keyword is used to define an asynchronous function which returns a promise.Within this function
+u can use the wait keyword to pause the execution of the function until a promised is resolved or rejected.
+
+whenever the promise is successful await block is executed 
+whenever the   promise is rejected catch block is executed 
+
+
+**await keyword is used inside async function
+for error handling using error handling
+use try{}catch{} blocks
+
