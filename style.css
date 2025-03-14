@@ -24,7 +24,7 @@ input{
 }
 /* we created a class submit where the submit button is to style it*/
 .submit{
-     margin: 15px auto 0 auto; /*here margin will be applied from all direction */
+     margin top: 15px auto 0 auto; /*here margin will be applied from all direction */
      width: 40%;
      background-color: burlywood;
      border-radius: 5px;
