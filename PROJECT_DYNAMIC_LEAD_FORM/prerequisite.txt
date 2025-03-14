@@ -1,0 +1,9 @@
+salesforce developer org
+github account
+google account
+
+1) login in to salesfirce and in home search web to lead form(make sure web to lead is enabled) and disable reCAPTCHA Verification, also create a custom field lead date
+
+2)create a web to lead form 
+3) as of now put any return url and unselect include reCAPTCHA
+4) copy the html paste it in github and open in live server. thr form appears but it has no validations and does not look good.

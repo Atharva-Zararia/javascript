@@ -1,0 +1,48 @@
+/* //this "*" is for complete page*/
+/* whenever we want to apply css to tags we directly use name like h1,lable,input*/
+/*but for classes we use . notation*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box
+}
+
+h1{ /*too make h1 in centre*/
+    text-align: center;
+}
+
+label,input{ /*common settings for label and input*/
+    display: block;
+}
+label{
+    color: green;
+    
+}
+
+input{
+    width: 100%;
+}
+/* we created a class submit where the submit button is to style it*/
+.submit{
+     margin: 15px auto 0 auto; /*here margin will be applied from all direction */
+     width: 40%;
+     background-color: burlywood;
+     border-radius: 5px;
+}
+
+/* how to apply margin
+first put top margin
+then right then bottom left 
+if u do not apply margin to one side  whatever is applied to the opposite side it is applied to it*/
+
+/* now we have to aplly css to forms so we will apply it to complete form */
+
+
+form
+{
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
+    border: 2px solid black;
+    padding: 15px;
+}
