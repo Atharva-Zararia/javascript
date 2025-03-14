@@ -7,6 +7,7 @@
     <title>Web to Lead form</title>
     <link rel = "stylesheet" href="style.css"/>
     <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
     <h1> Create Lead</h1>
@@ -14,6 +15,8 @@
     
     <input type=hidden name="oid" value="00DdL00000Ba59M">
     <input type=hidden name="retURL" value="https://atharva-zararia.github.io/javascript/thanks.html">
+    <input type=hidden name='captcha_settings' value='{"keyname":"WEBTOLEAD","fallback":"true","orgId":"00DdL00000Ba59M","ts":""}'>
+
     
     <input type=hidden name="Lead_Date__c"  class="outputdate">  
     
@@ -27,6 +30,8 @@
     <label for="Lead_Date">Lead Date</label>
     <input id="Lead_Date" maxlength="40" name="Lead_Date" size="20" type="date" required="true" class="inputdate" />
     <input type="submit" name="submit" class="sub"> 
+    <div class="g-recaptcha" data-sitekey="6Lc4ZPQqAAAAALT4beAU3ldr-ededZBXNiNYoEWo"></div><br>
+
     </form>
   
 </body>
