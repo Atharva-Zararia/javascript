@@ -26,7 +26,7 @@ input{
 .submit{
      margin : 15px auto 0 auto; /*here margin will be applied from all direction */
      width: 40%;
-     background-color: burlywood;
+     background-color: rgb(175,137,211);
      border-radius: 5px;
 }
 
